@@ -13,6 +13,9 @@ h6 {
 }
 
 /* Customize section titles and the store name */
+.store-name {
+	margin: 0;
+}
 .store-name, .section-title  {
 	text-shadow: 1px 1px 1px black;
 }
@@ -22,7 +25,7 @@ h6 {
 
 /* Customizing Logo */
 .logo-small {
-	width: 2em;
+	width: 2.5em;
 }
 
 .feature {
@@ -45,30 +48,18 @@ h6 {
 }
 		
 .footer-info {
-    padding: 20px 0;
+    padding: 1em 0;
     background: #f7f7f7;
-}
-
-.footer-info,
-.footer-info a:link,
-.footer-info a:hover,
-.footer-info a:focus,
-.footer-info a:visited {
-    color: #959595;
 }
 
 .footer-info h3 {
 	color: black;
-	font-size: 18px;
-}
-    
-.footer-info-item {
-    padding: 0px 20px;
+	font-size: 1em;
 }
     
 footer .small-print {
 	background-color: #fff;
-	padding: 30px 0;
+	padding: 2em 0;
 	text-align: center;
 }
 
@@ -76,6 +67,9 @@ footer .small-print p a{
 	color: orange;
 }
 
+b {
+	font-size: 1.2em;
+}
 
 /*
 *************************** 
@@ -98,6 +92,9 @@ a:focus {
 ul.navbar-nav  li.active a, .navbar-nav .nav-item > a:active{
 	background-color: #e7e7e7;
 }
+.nav-item {
+	color: blue;
+}
 
 /* Change color of icon for drop down items when hover */
 a:hover .fa-chevron-right {
@@ -105,6 +102,11 @@ a:hover .fa-chevron-right {
 }
 
 /* Navbar */
+.navbar {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
 .navbar-default {
   background-color: #fff;
 }
@@ -116,7 +118,6 @@ a:hover .fa-chevron-right {
   color: sienna;
   background-color: transparent;
 }
-
 
 /* Primary Buttons */
 .btn-primary {
@@ -207,29 +208,112 @@ fieldset[disabled] .btn-primary.active {
 *************************** 
 Media Queries
 ***************************
+*/
+
+/* FLUID TYPOGRAPHY */
+/* [minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]); */
+
+/* Minimum sizes for the smallest screen.
+   It is in fixed units but from that point we appy fluid increase of size */
+body {
+	font-size:12px;
+}
+.fluid-type-h1 {
+	font-size: 25px;
+}
+.fluid-type-h2 {
+	font-size: 22px;
+}
+.fluid-type-h3 {
+	font-size: 16px;
+}
+a.btn-primary, button.btn-primary, a.btn-secondary, button.btn-secondary, input.form-control {
+	font-size: 13px;
+}
+p.lead {
+	font-size: 15px;
+}
+.small-print {
+	font-size: 10px;
+}
+
 
 /* For Mobile */
-@media (max-width: 799px) {  
-	body {
-		background-color: violet;
+@media (min-width: 320px) and (max-width: 799px) {  
+	body, a.btn-primary, button.btn-primary, a.btn-secondary, button.btn-secondary, input.form-control, .dropdown-item {
+		font-size: calc(12px + 2 * ((100vw - 320px) / 479)); 
+	}
+	p.lead {
+		font-size: calc(15px + 2 * ((100vw - 320px) / 479)); 
 	}
 	div.media img.logo-small {
 		display: none;
 		width: 0;
 		margin: 0;
 	}
-
+	.fluid-type-h1{
+		font-size: calc(25px + 10 * ((100vw - 320px) / 479));
+	}
+	.fluid-type-h2{
+		font-size: calc(22px + 8 * ((100vw - 320px) / 479));
+	}
+	.fluid-type-h3{
+		font-size: calc(18px + 6 * ((100vw - 320px) / 479));
+	}
+	.fluid-type-h3{
+		font-size: calc(16px + 4 * ((100vw - 320px) / 479));
+	}
+	.small-print {
+		font-size: calc(10px + 1 * ((100vw - 320px) / 479));
+	}
 }
 /* For Tablets */
 @media (min-width: 800px) and (max-width: 1199px) {  
-	body {
-		background-color: yellow;
+	body, a.btn-primary, button.btn-primary, a.btn-secondary, button.btn-secondary, input.form-control, .dropdown-item {
+		font-size: calc(14px + 1 * ((100vw - 800px) / 399)); 
+	}
+	p.lead {
+		font-size: calc(17px + 2* ((100vw - 800px) / 399)); 
+	}
+	.fluid-type-h1{
+		font-size: calc(35px + 10 * ((100vw - 800px) / 399)); 
+	}
+	.fluid-type-h2{
+		font-size: calc(30px + 8 * ((100vw - 800px) / 399)); 
+	}
+	.fluid-type-h3{
+		font-size: calc(24px + 6 * ((100vw - 800px) / 399)); 
+	}
+	.fluid-type-h4{
+		font-size: calc(20px + 4 * ((100vw - 800px) / 399)); 
+	}
+	.small-print {
+		font-size: calc(11px + 1 * ((100vw - 800px) / 399));
 	}
 }
 /* For Desktop */
 @media (min-width: 1200px) {  
-	body {
-		background-color: green;
+	body, a.btn-primary, button.btn-primary, a.btn-secondary, button.btn-secondary, input.form-control, .dropdown-item {
+		font-size: 15px;
 	}
+	p.lead{
+		font-size: 20px;
+	}
+	.fluid-type-h1{
+		font-size: calc(45px + 10 * ((100vw - 1200px) / 760)); 
+	}
+	.fluid-type-h2{
+		font-size: calc(38px + 6 * ((100vw - 1200px) / 760)); 
+	}
+	.fluid-type-h3{
+		font-size: calc(30px + 4 * ((100vw - 1200px) / 760)); 
+	}
+	.fluid-type-h4{
+		font-size: calc(24px + 3 * ((100vw - 1200px) / 760)); 
+	}
+	.small-print {
+		font-size: calc(12px + 1 * ((100vw - 320px) / 479));
+	}
+	
 }
 
