@@ -202,3 +202,34 @@ fieldset[disabled] .btn-primary.active {
   background-color: darkgreen;;
   border-color: darkgreen;;
 }
+
+/*
+*************************** 
+Media Queries
+***************************
+
+/* For Mobile */
+@media (max-width: 799px) {  
+	body {
+		background-color: violet;
+	}
+	div.media img.logo-small {
+		display: none;
+		width: 0;
+		margin: 0;
+	}
+
+}
+/* For Tablets */
+@media (min-width: 800px) and (max-width: 1199px) {  
+	body {
+		background-color: yellow;
+	}
+}
+/* For Desktop */
+@media (min-width: 1200px) {  
+	body {
+		background-color: green;
+	}
+}
+
