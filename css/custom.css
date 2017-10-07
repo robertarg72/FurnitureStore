@@ -15,6 +15,8 @@ h6 {
 /* Customize section titles and the store name */
 .store-name {
 	margin: 0;
+	color: #B46428; 
+	/* #C26E2B; */
 }
 .store-name, .section-title  {
 	text-shadow: 1px 1px 1px black;
@@ -92,8 +94,9 @@ a:focus {
 ul.navbar-nav  li.active a, .navbar-nav .nav-item > a:active{
 	background-color: #e7e7e7;
 }
-.nav-item {
-	color: blue;
+
+.navbar-toggler, .navbar-toggler-icon {
+	background-color: #B46428;
 }
 
 /* Change color of icon for drop down items when hover */
@@ -111,7 +114,7 @@ a:hover .fa-chevron-right {
   background-color: #fff;
 }
 .navbar-default .navbar-brand {
-  color: #dd845a;
+  color: #B46428;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -182,26 +185,26 @@ fieldset[disabled] .btn-primary.active {
 /* Secondary Buttons */
 .btn-secondary {
 	color: white;
-	background-color: green;
-	border-color: green;
+	background-color: #C26E2B;
+	border-color: #C26E2B;
 }
 .btn-secondary:focus,
 .btn-secondary.focus {
   color: #fff;
-  background-color: darkgreen;
-  border-color: darkgreen;;
+  background-color: #B46428;
+  border-color: #B46428;;
 }
 .btn-secondary:hover {
   color: #fff;
-  background-color: darkgreen;;
-  border-color: darkgreen;;
+  background-color: #B46428;;
+  border-color: #B46428;;
 }
 .btn-secondary:active,
 .btn-secondary.active,
 .open > .dropdown-toggle.btn-secondary {
   color: #fff;
-  background-color: darkgreen;;
-  border-color: darkgreen;;
+  background-color: #B46428;;
+  border-color: #B46428;;
 }
 
 /*
