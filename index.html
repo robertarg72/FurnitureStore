@@ -23,9 +23,9 @@
 
     <!-- Customization for this website -->
     <link href="css/custom.css" rel="stylesheet">
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
 
-    <title>Pine Furniture Store</title>
+    <title>Pine Furniture Depot</title>
 
     <!-- Some extra styles (remove if not needed) -->
     <style>
@@ -54,11 +54,22 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <span class="glyphicon glyphicon-fire"></span> 
+            <!-- Logo and Store Name -->
+            <!-- <a class="navbar-brand logo-storename" href="#">
+                <img class="d-block w-25" src="images/logo.jpg" alt="Logo">
                 Pine Furniture Depot
+            </a> -->
+
+            <a class="navbar-brand logo-storename" href="#">
+                <div class="media">
+                    <img class="logo mr-3" src="images/logo.jpg" alt="logo">
+                    <div class="media-body">
+                        <h4>Pine Furniture Depot</h4>
+                        <!-- <p>Pine Furniture Depot</p> -->
+                    </div>
+                </div>
             </a>
+            
 
             <!-- Menu Links -->
             <div class="collapse navbar-collapse justify-content-between" id="collapsingNavbar"> <!-- navbar-toggleable-sm -->
@@ -293,9 +304,11 @@
         <div class="footer-info">
             <div class="container">
                 <div class="row">
-
+                    <div class="col-sm-2 footer-info-item text-center">
+                        <img class="logo d-flex align-self-center w-100" src="images/logo.jpg" alt="logo">
+                    </div>
                     <!-- Contact Us -->
-                    <div class="col-sm-6 footer-info-item text-center">
+                    <div class="col-sm-5 footer-info-item text-center">
                         <p class="lead">
                                 941 Progress Ave, Toronto, ON M1K 5E9
                         </p>
@@ -305,7 +318,7 @@
                     </div>
 
                     <!-- Subscribe for Newsletter -->
-                    <div class="col-sm-6 footer-info-item">
+                    <div class="col-sm-4 footer-info-item">
                         <h3><span class="glyphicon glyphicon-list-alt"></span> Newsletter</h3>
                         <p>Sign up for exclusive offers.</p>
                         <div class="input-group">

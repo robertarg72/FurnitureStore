@@ -156,6 +156,10 @@ Override Bootstrap Classes
 ***************************
 */
 
+.logo {
+	width: 2em;
+}
+
 /* Links */
 a {
   /* color: orange; */
