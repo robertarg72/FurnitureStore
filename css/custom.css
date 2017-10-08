@@ -1,14 +1,19 @@
+/*
+Author:      Robert Argume
+Student ID:  300949529
+Description: Home page for Pine Furniture Store
+             Assignment 1 - MAPD112 Web Technologies for Mobile Platforms
+             Implemented with Bootstrap 4 and FontAwesome library for Icons
+             Responsive implementation with fluid size increase for fonts in the site
+Version: 0.1 
+*/
+
 body {
-	padding-top: 50px;    /* Padding for .navbar-fixed-top. Change value if navbar height changes. Remove if using .navbar-static-top. */
+	padding-top: 50px;   
 	color: #959595;
 }
 	
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6 {
+h1, h2, h3, h4, h5, h6 {
 	color: #dd845a;
 }
 
@@ -16,7 +21,6 @@ h6 {
 .store-name {
 	margin: 0;
 	color: #B46428; 
-	/* #C26E2B; */
 }
 .store-name, .section-title  {
 	text-shadow: 1px 1px 1px black;
@@ -30,6 +34,7 @@ h6 {
 	width: 2.5em;
 }
 
+/* Customization for the feature banner */
 .feature {
 	background: url('../images/feature_banner.jpg');
 	background-position: top right;
