@@ -4,7 +4,7 @@ Student ID:  300949529
 File:        custom.css
 Description: Style customization for the site
              Assignment 1 - MAPD112 Web Technologies for Mobile Platforms
-Version: 0.2 
+Version: 0.3 
 */
 
 body {
@@ -77,6 +77,10 @@ b {
 	font-size: 1.2em;
 }
 
+
+.quantity {
+	width: 17%;
+}
 /*
 *************************** 
 Override Bootstrap Classes 
@@ -232,6 +236,9 @@ body {
 	font-size: 22px;
 }
 .fluid-type-h3 {
+	font-size: 18px;
+}
+.fluid-type-h4 {
 	font-size: 16px;
 }
 a.btn-primary, button.btn-primary, a.btn-secondary, button.btn-secondary, input.form-control {
@@ -267,7 +274,7 @@ p.lead {
 	.fluid-type-h3{
 		font-size: calc(18px + 6 * ((100vw - 320px) / 479));
 	}
-	.fluid-type-h3{
+	.fluid-type-h4{
 		font-size: calc(16px + 4 * ((100vw - 320px) / 479));
 	}
 	.small-print {
